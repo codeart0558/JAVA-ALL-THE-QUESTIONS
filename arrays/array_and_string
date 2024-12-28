@@ -1,0 +1,37 @@
+Arrays and Strings
+1) Write application that creates an array of double, to provide following functionality.
+ display the length of the array and its elements.
+ Display an array. (Use for each version of loop for display).
+ compute the sume of the squares of these numbers.
+ Determine Mean and Median of an array.
+ Sort an array – Ascending and Descending. Use any two sorting algorithm. User can also
+select the sorting method.
+ Search an element from the array, i.e. returns the location of the element of an array
+that matches an indicated value.
+ Copy of an array.
+ Reverse of an array.
+[---------------------------------------------]
+2) Write a program in Java to create variable size array. Data can be numeric.
+ Flush an array
+ add a number at a specified location in an anay.
+ display the array
+[------------------------]
+3) Program in Java to find A+B, A-B, A*B and transpose of A, where A is a matrix of 3*3 and B is a
+matrix of 3*4.Take the values in matrixes A and B from the user.
+4) Write and run a JAVA program that reads a string from the user and perform the following.
+ counts number of occurance of a given character (for example, " a") in a string.
+ searches the last occurance of a character in a string.
+ removes the unneccessary spaces from a string : leading and trailing spaces.
+ displays the substring formed by the last ten characters of a string
+5) WAP that inputs a line of text, tokenizes the line with StringTokenizer and outputs the tokens in
+reverse order.
+6) Create a StringBuffer and illustrate how to append character. Display capacity, length of the
+StringBuffer.
+7) Write an application that reads and processes strings from the console. Perform the following
+functions based on the menu choice selected by the user..
+ Reverse the sequence of strings and then display it.
+ Reverse the sequence of characters in each string and then display it.
+ rearrange the strings according to the length of the string.
+ Sorting
+ Concatenation
+ Change them to uppercase, lowercase depending on user’s choice.
