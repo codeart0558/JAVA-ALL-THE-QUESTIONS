@@ -1,0 +1,45 @@
+1. Write a class called Statistics, which has a static method called average, which takes a one
+dimensional array for double type, as parameter, and prints the average for the values in the
+array.
+a. Now write a class with the main method, which creates a two-dimensional array for the
+four weeks of a month, containing minimum temperatures for the days of the week(an
+array of 4 by 7), and uses the average method of the Statistics class to compute and
+print the average temperatures for the four weeks.
+------------------------------------------------------
+2. Develop the following application in given steps.
+--
+a. Step-1 :
+--
+i. Define a class called Cartesian Point, which has two instance variables, x and y.
+Provide the following methods
+1. get X() and get Y() to return the values of the x and y values respectively.
+2. move() which would take two integers as parameters and change the
+values of x and y respectively,
+3. a method called display() which would display the current values of x
+and y.
+ii. Now overload the method move() to work with single parameter, which would
+set both x and y to the same values, .
+iii. Provide constructors with two parameters and overload to work with one
+parameter as well.
+iv. Now define a class called Test Cartesian Point, with the main method to test the
+various methods in the Cartesian Point class.
+---
+b. Step-2 :
+--
+i. Define a class called Triangle, which has constructor with three parameters,
+which are of type Cartesian Point.
+ii. Provide methods
+1. to find the area and the perimeter of the Triangle,
+2. a method display() to display the three Cartesian Points separated by ':'
+character,
+3. a method move() to move the first Cartesian Point to the specified x, y
+location, the move should take care of relatively moving the other
+points as well,
+4. a method called rotate, which takes two arguments, one is the Cartesian
+Point and other is the angle in clockwise direction.
+5. Overload the move method to work with Cartesian Point as a
+parameter.
+iii. Now define a class called Test Triangle to test the various methods defined in
+the Triangle class.
+c. Step-3 :
+i. Similarly also define a class called Rectangle which has four Cartesian Poi
