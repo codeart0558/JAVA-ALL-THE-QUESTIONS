@@ -1,0 +1,24 @@
+4. Develop a basic graphics package. 
+a. Within the package create a abstract class Shape having function print(). 
+b. Create two subclasses Two Dimensional and three Dimensional from Shape class . 
+c. These two subclasses also should be abstract. 
+d. Implement the print method in the subclasses Square, Circle, Cylinder, Cube, to output 
+the type and dimension of the shape Also include area and volume methods to calculate 
+the area and volume of the concrete shapes 
+e. Write a driver program that creates various shapes and put them in an array of Shape 
+Use polymorphism to print and calculate the area and volume of objects stored in array.
+
+5. Create three packages—PersonPack, FlatPack and PFPack.
+a. Package PersonPack must contain a class called Person with the following attributes: 
+PIDNumber, name, etc. 
+i. It must have a reference variable of the type Flat.
+ii. It should have a static method displayOwnershiplnfo() that takes as an input 
+parameter a variable of PIDNumber and returns void. This method must display 
+the information about the classes Person and Flat. 
+b. Package FlatPack must contain the class F with following attributes: apartmentName, 
+flatNo and noOfBedrooms 
+i. It should have method dispFlatlnfo() that displays information of the attributes 
+of the class Flat. 
+c. Package PFPack must contain a class called PFDemo that has a main method .
+i. create objects of the classes Person and Flat and 
+ii. invoke the displayOwnershiplnfo() method
