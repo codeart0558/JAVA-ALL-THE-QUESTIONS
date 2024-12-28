@@ -1,0 +1,28 @@
+Exceptions
+1. Define an Employee class with Employee code , name , date of birth , and date of 
+appointment . The Employee code must have a format of year-designation-number. The 
+year will be two digit code . The designation is single letter code M for Manager , A for 
+Administrative , T for Technical Staff , E for Executive Staff . The number is a three 
+digit number. For Eg.
+ 87-M-123 ( year is 1987 , Designation is Manager and number is 123)
+ 91-T-126
+Write a java program to read the employee code , name , date of birth , and date of 
+appointment and validate the employee code. If the employee code is incorrect a suitable 
+user defined exception must be thrown . If the date of birth is after date of appointment then 
+throw another user defined exception.
+If all the details are correct then only create the employee object and display detail of 
+employees and number of years of experience.
+2. A method named average() has one argument that is an array of strings. It converts these 
+to double values and returns their average. The method generates a NullPointerException 
+if a array elements is null or NumberFormatException if an element is incorrectly 
+formatted. Write a program that illustrates how to declare and use this method. Include 
+throws clause in the method declaration to indicate that these problems can occur.
+3. Write a program which creates an Array of character. Make one function with one 
+argument as a character and that function throw a user defined exception if the character 
+that u have passed is digit.
+4. Write a program which creates an array of Date in form (dd/mm/yy). Analyze each 
+element and check whether the date is correct or not. If the date is wrong then throw a 
+User defined Exception DateException and display the appropriate message. If the Date 
+is correct then display the date in this format. For example, if the date is 9/9/06 then 
+display the date like 9th September 2006. You are able to display all the dates in the 
+given String and for the date which is not proper, display the appropriate message
