@@ -1,0 +1,37 @@
+1. Create three threads with different sleep-times from the main thread with following capabilities.
+ One thread generates prime numbers in an infinite loop. Supply the sleep time of main 
+thread and the sleep time of prime thread from the command line.
+ Two more threads T1 and T2 doing any other work also execute simultaneously with 
+suitable display information. 
+ When prime thread prints 13, after that T1 goes into wait mode. T1 resumes back when 
+prime thread prints 79. 
+ Threads T1 and T2 should stop executing when the keys ‘1’ and ‘2’ are pressed 
+respectively. Prime thread should stop after the ‘ENTER’ key is pressed. Exit of each 
+thread must be displayed on the console.
+___________________________
+
+2. Write a program for restaurant. Use Inter Thread Communication.
+ When customer places an order then and only then Manager can take the Order or 
+generate a bill of an Order. 
+ And display the customer order after it place the Order. 
+ You have to display minimum three orders of three different customers A, B and C, in 
+which customer A is the preferred customer with higher priority.
+_______________________________
+3. Implement three classes: Storage, Counter, and Printer. 
+ The Storage class should store an integer. 
+ The Counter class should create a thread that starts counting from 0 (0, 1, 2, 3 ...) and 
+stores each value in the Storage class. 
+ The Printer class should create a thread that keeps reading the value in the Storage class 
+and printing it.
+ Write a program that creates an instance of the Storage class and sets up a Counter and 
+a Printer object to operate on it. Ensure that each number is printed exactly once, by 
+adding suitable synchronization.
+_______________________________________
+4. Create a class ‘Account’ with private data like accountnumber, name, balance and method 
+transaction() which handles withdraws and deposits with suitable display messages. 
+ Create a thread class ‘Teller’ with private data like name, an object of class Account, 
+amount of transaction and transaction code (deposit or withdrawal). 
+ Initiate 2 teller transactions for customer A. 
+ Also initiate two separate transaction for customer B and customer C. 
+ Transactions for one customer must run in synchronization. 
+ Transactions for different customers do not interfere with one another

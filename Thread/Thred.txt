@@ -1,0 +1,107 @@
+****daemon****
+* daemon thread is a low-priority thread
+* runs in the background to perform tasks such as garbage 
+  collection or other support tasks for the program.
+* Daemon threads are different from user threads because the JVM does not wait for daemon threads
+*  When all user threads in an application have finished, the JVM will terminate regardless of whether daemon threads are still running.
+
+______________
+**** Thred Life Cycle
+
+1.New: A thread is created but not yet started.
+2.Runnable: The thread is ready to run but waiting for CPU time.
+3.Running: The thread is actively executing.
+4.Blocked/Waiting: The thread is paused, waiting for a resource or signal.
+5.Terminated: The thread has finished execution.
+
+
+________________
+*** createing the threads
+1) Extending the Thread class:
+--> We can extend the Thread class and override the run() method
+to define the thread’s behavior. To extend the Thread class, we
+must override the run() method. The run() method contains
+the code that the thread will execute. Once we have created a
+thread, we can start it by calling the start() method.
+
+2)Implementing the Runnable interface:
+->We can implement the Runnable interface and pass an instance of the
+class to the Thread constructor.
+
+____________________
+** Thred Syncronization
+
+Thread Synchronization in Java means making sure that
+only one thread can use a shared resource (like a variable or file)
+at a time to avoid mistakes and ensure correct results.
+
+
+1) public synchronized void synchronizedMethod() {
+    // Code to be executed in a mutually exclusive manner
+    }
+
+2) Reentrant Locks: The ReentrantLock class from the
+    java.util.concurrent.locks package provides a more flexible
+    alternative to intrinsic locks. It supports features such as
+    interruptible locks, fairness, and timeout-based locking.
+
+3) Volatile Keyword: The volatile keyword ensures that a
+variable’s value is always read and written directly from and to the
+main memory.
+
+private volatile boolean flag = false;
+public void setFlag() {
+flag = true;
+}
+public boolean checkFlag() {
+return flag;
+}
+
+4) Atomic Classes: 
+
+Commonly Used Atomic Classes
+AtomicInteger: For atomic operations on integers.
+AtomicLong: For atomic operations on long values.
+AtomicBoolean: For atomic operations on boolean values
+
+
+import java.util.concurrent.atomic.AtomicInteger;
+public class MyClass {
+private AtomicInteger counter = new AtomicInteger(0);
+public void incrementCounter() {
+counter.incrementAndGet();
+}
+}
+
+
+5) Wait and Notify: The wait() and notify() (or notifyAll())
+methods, along with synchronized blocks, can be used for more
+advanced thread communication and coordination.
+
+synchronized (sharedObject) {
+while (conditionNotMet) {
+sharedObject.wait();
+}
+// Perform actions when the condition is met
+}
+
+6)
+Java, the join() method is used to wait for a thread to complete its
+execution.
+
+
+Thread P1: Simulates a task by printing a message, waiting for 2 seconds, and then completing.
+Thread P2: Starts execution but waits for P1 to complete using P1.join(). After P1 finishes, P2 continues its work.
+Main Thread: Waits for both P1 and P2 to finish using their join() methods.
+
+
+7) thred pools 
+A Thread Pool in Java is a collection of pre-created worker threads 
+that execute tasks from a queue. Instead of creating new threads for every task, 
+the thread pool reuses existing threads, improving performance and resource management.
+
+
+Fixed Thread Pool:
+
+Executors.newFixedThreadPool(3) creates a pool with 3 threads.
+A maximum of 3 tasks run concurrently; others wait in a queue.
