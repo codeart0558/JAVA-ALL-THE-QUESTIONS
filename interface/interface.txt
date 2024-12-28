@@ -1,0 +1,27 @@
+3. Develop the Figure application in given steps.
+a. Design an interface IFig having the following methods: 
+i. public void calcAreaQ; 
+ii. public void calcVolumeO; 
+iii. It must also have the variable pi of the type double and having a value 3.1428. 
+b. Design an abstract class called Figure. 
+i. It must have three attributes r. a and v of data type double. 
+ii. It has abstract methods: 
+1. public abstract void dispAreaQ; 
+2. public abstract void dispVolumeO; 
+c. Design three classes Cone, Sphere and Cylinder. Each of them, should 
+extend the Figure class and implement the IFig interface.
+------------ 
+d. Write a test program to demonstrate polymorphism
+-----------
+ClassName Attribute 
+Cone --> h, s of the type double 
+Sphere ---> 
+Cylinder -->     h of the type double 
+
+----
+box 2
+----
+Figure Formulae 
+Cone --> Area =(pi*r*s)+(pi*r*r) --> Volume = (pi * r * r * h)/3 
+Sphere --> Area = 4 * p * r * r --> Volume = (4 * pj * r * r r) /3 
+Cylinder --> Area =(2*pi*r*r)+(2*pi*r*h) --> Volume = pi * r * r * h
