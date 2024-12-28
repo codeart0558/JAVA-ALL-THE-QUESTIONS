@@ -1,0 +1,68 @@
+// # 2) Write a generic class Stack<T> that can be used to represent stacks of objects of type T. The class 
+// # should include methods push(), pop(), and isEmpty(). Inside the class, use an ArrayList to hold the 
+// # items on the stack.
+import java.util.ArrayList;
+
+class Stack<T> {
+    // List to hold the elements of the stack
+    private ArrayList<T> stackList;
+
+    // Constructor to initialize the stack
+    public Stack() {
+        stackList = new ArrayList<>();
+    }
+
+    // Method to add an element to the stack
+    public void push(T item) {
+        stackList.add(item);  // Add the item to the end of the list (top of the stack)
+    }
+
+    // Method to remove and return the element at the top of the stack
+    public T pop() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Stack is empty");
+        }
+        return stackList.remove(stackList.size() - 1);  // Remove and return the last element (top of the stack)
+    }
+
+    // Method to check if the stack is empty
+    public boolean isEmpty() {
+        return stackList.isEmpty();  // Returns true if the stack is empty
+    }
+
+    // Method to view the element at the top of the stack without removing it
+    public T peek() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Stack is empty");
+        }
+        return stackList.get(stackList.size() - 1);  // Return the last element without removing it
+    }
+}
+
+public class TestStack {
+    public static void main(String[] args) {
+        // Create a Stack of Integer type
+        Stack<Integer> intStack = new Stack<>();
+
+        // Push elements onto the stack
+        intStack.push(10);
+        intStack.push(20);
+        intStack.push(30);
+
+        // Peek the top element
+        System.out.println("Top element is: " + intStack.peek());
+
+        // Pop elements from the stack
+        System.out.println("Popped element: " + intStack.pop());
+        System.out.println("Popped element: " + intStack.pop());
+
+        // Check if the stack is empty
+        System.out.println("Is stack empty? " + intStack.isEmpty());
+
+        // Pop the last element
+        System.out.println("Popped element: " + intStack.pop());
+
+        // Check if the stack is empty after popping all elements
+        System.out.println("Is stack empty? " + intStack.isEmpty());
+    }
+}

@@ -1,0 +1,99 @@
+# Collections
+# 1. Write a program to read employee detail and store the employee object in linkedlist. Sort the 
+# list based on salary.
+# a. Create class- Employee (Attributes- empid, name , dob , salary : Methods: setDetails, 
+# getDetails and constructures )
+# b. Employee class must implement comparable interface
+# c. Create another class TestEmployee, here create the linkedlist of employees and sort the 
+# list.
+# ________________________________________________________________________________________________________
+# 2. Create a HashSet of 5 names. Write a menu driven program to do the following:
+# a. Add a new name
+# b. Remove a name
+# c. Search a name
+# d. Display all the names (display in reverser order also – use ListIterator )
+# e. Display number of elements in hashset
+# ______________________________________________________________________________________________________
+# 3. Create a HashTable/ HashMap of students object and find the following:
+# a. Check if a particular key exist in the hashtable or not. If exist then display the value
+# b. Remove an entry from hashtable (key is entered by user to remove)
+# c. Add a new entry
+# d. Display all the entries 
+# e. Check if a particular value exist in the hashtable or not. If exist then display the value
+
+# 1) Write a program to store a deck of 52 cards in a linked list in random sequence using a Random class 
+# object. You can represent a card as a two-character string—”1C” for the ace of clubs, “JD” for the 
+# jack of diamonds, and so on. Output the cards from the linked list as four hands of 13 cards.
+# 2) Write a generic class Stack<T> that can be used to represent stacks of objects of type T. The class 
+# should include methods push(), pop(), and isEmpty(). Inside the class, use an ArrayList to hold the 
+# items on the stack.
+# 3) Create two hash sets {"George", "Jim", "John", "Blake", "Kevin", "Michael"} and {"George", "Katie", 
+# "Kevin", "Michelle", "Ryan"}, and find their union, difference, and intersection
+Interfaces:
+List, Set, Queue, Map
+
+______________________________________________________________________________________________________
+1. List Interface
+Represents an ordered collection of elements (allows duplicates).
+Provides positional access to elements.
+Implementations:
+
+@ ArrayList: Resizable array.
+@ LinkedList: Doubly-linked list.
+@ Vector: Synchronized, legacy class.
+
+Key Methods:
+
+1.add(E e): Adds an element to the list.
+2.get(int index): Retrieves the element at the specified position.
+3.remove(int index): Removes the element at the specified position.
+4.size(): Returns the number of elements in the list.
+5.set(int index, E element):Replaces the element at the specified index with a new element.
+6.indexOf(Object o):Returns the index of the first occurrence of the specified element, or -1 if not found.
+
+______________________________________________________________________________________________________
+2. Set Interface
+Represents a collection that does not allow duplicate elements.
+Implementations:
+
+@ HashSet: Backed by a hash table, does not guarantee order.
+@ LinkedHashSet: Maintains insertion order.
+@ TreeSet: Sorted set backed by a Red-Black tree.
+Key Methods:
+
+1.add(E e): Adds an element to the set if it’s not already present.
+2.contains(Object o): Checks if the set contains a specific element.
+3.remove(Object o): Removes a specific element from the set.
+4.size():Returns the number of elements in the set.
+______________________________________________________________________________________________________
+3. Queue Interface
+Represents a collection designed for holding elements prior to processing.
+Typically follows FIFO (First-In-First-Out) order.
+Implementations:
+
+@ PriorityQueue: Elements are ordered by their natural ordering or a custom comparator.
+@ LinkedList: Can be used as a Queue.
+@ ArrayDeque 
+
+Key Methods:
+1.add(E e): Adds an element to the queue.
+2.poll(): Retrieves and removes the head of the queue, or returns null if empty.
+3.peek(): Retrieves but does not remove the head of the queue.
+______________________________________________________________________________________________________
+4. Map Interface
+Represents a collection of key-value pairs.
+Duplicate keys are not allowed, but duplicate values are.
+Implementations:
+
+@ HashMap: Backed by a hash table.
+@ LinkedHashMap: Maintains insertion order.
+@ TreeMap: Sorted map backed by a Red-Black tree.
+
+Key Methods:
+1.put(K key, V value): Associates the specified value with the specified key.
+2.get(Object key): Returns the value associated with the specified key.
+3.containsKey(Object key): Checks if the map contains a specific key.
+4.remove(Object key): Removes the mapping for the specified key.
+5.keySet():Returns a set of all keys in the map.
+6.values():Returns a collection of all values in the map.
+7.entrySet():Returns a set of key-value mappings.
